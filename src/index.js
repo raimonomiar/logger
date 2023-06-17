@@ -1,1 +1,5 @@
-console.log('Hello World');
+const logger = require('./logger');
+
+module.exports = {
+  logger,
+};
