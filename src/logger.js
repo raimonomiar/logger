@@ -23,7 +23,7 @@ const logger = createLogger({
   format: combine(
     time({
       format: DEFAULT_TIME_FORMAT,
-    }), 
+    }),
     customFormat,
   ),
   transports: [
