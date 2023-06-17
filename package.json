@@ -1,7 +1,7 @@
 {
   "name": "misc-logger",
   "version": "1.0.1",
-  "description": "Personal logger for nodejs",
+  "description": "A simple logger for nodejs",
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint . --ext .js",
