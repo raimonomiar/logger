@@ -2,7 +2,7 @@ const {
   createLogger,
   transports,
   format: {
-    timestamp,
+    timestamp: time,
     combine,
     printf,
   },
@@ -12,15 +12,18 @@ const {
   constants: {
     DEFAULT_LOG_LEVEL,
     DEFAULT_LOG_FILE,
+    DEFAULT_TIME_FORMAT,
   },
 } = require('config');
 
-const customFormat = printf(({ level, message, timeStamp }) => `${timeStamp} ${level}: ${message}`);
+const customFormat = printf(({ level, message, timestamp }) => `${timestamp} ${level}: ${message}`);
 
 const logger = createLogger({
   level: DEFAULT_LOG_LEVEL,
   format: combine(
-    timestamp(),
+    time({
+      format: DEFAULT_TIME_FORMAT,
+    }), 
     customFormat,
   ),
   transports: [
