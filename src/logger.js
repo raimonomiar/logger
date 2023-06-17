@@ -16,7 +16,8 @@ const {
   },
 } = require('config');
 
-const customFormat = printf(({ level, message, timestamp }) => `${timestamp} ${level}: ${message}`);
+const customFormat = printf(({ level, message, timestamp }) => 
+  `${timestamp} ${level}: ${message}`);
 
 const logger = createLogger({
   level: DEFAULT_LOG_LEVEL,
