@@ -1,7 +1,7 @@
 {
-  "name": "logger",
+  "name": "misc-logger",
   "version": "1.0.0",
-  "description": "",
+  "description": "Personal logger for nodejs",
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint . --ext .js",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/raimonomiar/logger.git"
   },
   "author": "raimonomiar",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/raimonomiar/logger/issues"
   },
